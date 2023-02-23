@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Online Library</title>
+        <style>
+
+    .grid-item{
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 5px ;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 10px black;
+    
+     }
+    .grid-item:hover{
+     background-color: rgba(red, green, blue, alpha);
+      color:solid pink;
+      
+      }
+      .list{
+       list-style-type: none !important;
+       padding-bottom: 20px;
+      }
+      .list li{
+     font-weight: normal;
+     font-family: cursive;
+      }
+      .container{
+        font-size: 20px;
+       color: black;
+      }
+      img {
+        float: left;
+         width: 250px;
+        height: 250px;
+        }
+        .header-right {
+            box-sizing: inherit;
+            color: aqua !important;
+            display: block;
+            /* list-style-type: disc; */
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #966F33;
+            border-radius: 20px;
+            
+        }
+        a {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            
+        }
+        .button{
+        box-sizing: inherit;
+        
+        }
+        .fa-search:before{
+            content: '\f002';
+            
+            
+        }
+        .fa{
+            display: inline-block;
+            font: normal normal normal 14px/1 fontawesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(1, 0);
+            cursor: pointer;
+            
+        }
+        .active {
+            background-color: skyblue;
+            color: solid black;
+            border-radius: 20px;
+        }
+        input{
+            align-items: flex-end;
+            cursor: pointer;
+        }
+        .align{
+            padding-top: 10px;
+            float: right;
+            align-items: center;
+            
+        }
+        .border{
+            border-image: stretch;
+            padding: 10% 10px 7px 9px;
+            background-color: whitesmoke;
+            
+        }
+        .button{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+           
+}
+        </style>
+    </head>
+    <div class="nav">
+        <div class="header-right">
+          <a class="active" href="Home.html">Home</a>
+          <a href="BestSell.html">Best Sellers</a>
+          <a href="About.html">About Us</a>
+          <div class="align"><input type="text" placeholder="Search">
+          <button type="button">
+        <i class="fa fa-search"></i>
+        </button></div>
+        </div>
+        </div>
+    <body>
+        <div class="border">
+            <u>Books</u>
+
+        </div>
+        <div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/The_Great_Gatsby">
+            <img src="image2.jpg"></a>
+            <ul class="list">
+                <li>Book Title:The Great Gatsby </li>
+                <li>By: F. Scott Fitzgerald</li>
+                <li>Year Published: April 10, 1925</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four">
+            <img src="image3.jpg"></a>
+            <ul class="list">
+                <li>Book Title:George Orwell 1984 </li>
+                <li>By: George Orwell</li>
+                <li>Year Published: 8 June 1949</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn">
+            <img src="image4.jpg"></a>
+            <ul class="list">
+                <li>Book Title: Huckleberry Finn </li>
+                <li>By: Mark Twain</li>
+                <li>Year Published: December 1884</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.britannica.com/topic/To-Kill-a-Mockingbird">
+            <img src="image1.jpg"></a>
+            <ul class="list">
+                <li>Book Title:To Kill a Mockingbird </li>
+                <li>By: Harper Lee</li>
+                <li>Year Published: 1960</li>
+            </ul>
+            <label class="container">Add to Cart</label>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <br>
+            <a href="BestSell.html" class="button">Wishlist</a>
+        </div>
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </body>
+</html>

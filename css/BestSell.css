@@ -1,0 +1,92 @@
+body{
+  background-color: aquamarine;
+  margin: 0;
+  padding: 0;
+}
+  img {
+ float: left;
+ width: 250px;
+ height: 250px;
+  }
+
+  .container{
+    display: flex;
+    min-height: max-content;
+    /* background-color: aliceblue; */
+    justify-content: center;
+    align-items: center;
+  }
+  .child {
+   height: 250px;
+   width: 250px;
+   background-color: blue;
+   border: 3px solid black;
+   margin-left: 10px;
+  }
+ 
+  p{
+
+    font-size: x-large;
+    color: #000;
+    /* border-bottom: #000; */
+    /* background-color: cadetblue;
+    border: 3px solid #000; */
+  }
+  .header-right {
+    box-sizing: inherit;
+    color: aqua !important;
+    display: block;
+    /* list-style-type: disc; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(196, 189, 189);
+    border-radius: 20px;
+  }
+  a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .button{
+   box-sizing: inherit;
+   
+  }
+  .fa-search:before{
+    content: '\f002';
+  }
+  .fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 fontawesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    cursor: pointer;
+  }
+  .active{
+    background-color: skyblue;
+    border-radius: 20px;
+    color: solid black;
+  }
+  input{
+    align-items: flex-end;
+    cursor: pointer;
+  }
+  .align{
+    padding-top: 10px;
+    float: right;
+    align-items: center;
+    
+  }
