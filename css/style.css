@@ -26,9 +26,9 @@ a{
 .main{
     width: 100%;
     height: 100vh;
-    background-color: #552307;
+    background-color: gray;
     position: relative;
-    background-image: url('../image/1.png');
+    background-image: url('../image/bgbook.jpg')
     background-repeat: no-repeat;
     background-size: 570px;
     background-position: right bottom;
@@ -48,7 +48,7 @@ nav{
     padding: 10px 50px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, .05);
     z-index: 1;
-    background-color: #552307;
+    background-color: gray;
 }
 .menu{
     display: flex;
@@ -64,7 +64,7 @@ nav{
     color: #fff;
 }
 .logo img{
-    width: 50px;
+    width: 500px;
 }
 .menu li a:hover,.active{
     background-color: #29292929;
